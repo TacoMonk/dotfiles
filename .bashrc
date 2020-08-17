@@ -134,6 +134,7 @@ export GOBIN="$GOPATH/bin"
 export PATH="${PATH}:/home/codespace/dotfiles/.krew/bin"
 alias k='kubectl'
 source <(kubectl completion bash)
+complete -F __start_kubectl k
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/codespace/google-cloud-sdk/path.bash.inc' ]; then . '/home/codespace/google-cloud-sdk/path.bash.inc'; fi
